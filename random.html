@@ -1,0 +1,38 @@
+<html>
+
+<body>
+
+<head>
+  
+<link rel="stylesheet" type="text/css" href="mycss.css">
+
+</head>
+
+<div id="controls">
+    
+<b>Random Graphs</b> 
+<select>
+
+<option data-p="r:4,h:4">BalancedTree</option>
+          
+<option data-p="n:150,p:0.05">ErdosRenyi.np</option>
+      
+        
+         </select>
+    <div id="params">
+        
+    </div>
+    <div id="graph">
+        <label>charge<input id="charge" type="range" min="0" value="50" max="100" /></label>
+        <label>link distance<input id="dist" type="range" min="0" value="20" max="100" /></label>
+    </div>
+</div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="randomgraph.js"></script>
+<script type="text/javascript" src="graphd3.js"></script>
+<script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+</html>
